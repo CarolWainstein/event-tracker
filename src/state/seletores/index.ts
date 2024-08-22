@@ -21,7 +21,7 @@ export const eventosFiltradosState = selector({
 export const eventosAsync = selector({
   key: 'eventosAsync',
   get: async () => {
-    const respostaHttp = await fetch('https://<seu-domínio>.vercel.app/api/eventos')
+    const respostaHttp = await fetch('https://<event-tracker-seven>.vercel.app/api/eventos')
     if (!respostaHttp.ok) {
       throw new Error('Network response was not ok')
     }
